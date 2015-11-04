@@ -16,7 +16,6 @@
 		48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD21BE9CCA20017657F /* MAUITableViewCell.m */; };
 		48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD61BE9E63E0017657F /* UIColor+Addition.m */; };
 		48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */; };
-		48DE6FDE1BE9ED5F0017657F /* MAHostingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FDD1BE9ED5F0017657F /* MAHostingView.mm */; };
 		48DE6FE01BE9EF670017657F /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DE6FDF1BE9EF670017657F /* test.png */; };
 		9C92321823DAC45519791C37 /* Pods_TestProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A1DE6EADB5D4DF08DEF85A /* Pods_TestProj.framework */; };
 /* End PBXBuildFile section */
@@ -52,8 +51,6 @@
 		48DE6FD61BE9E63E0017657F /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 		48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAsyncViewAnimationViewController.h; sourceTree = "<group>"; };
 		48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAAsyncViewAnimationViewController.mm; sourceTree = "<group>"; };
-		48DE6FDC1BE9ED5F0017657F /* MAHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAHostingView.h; sourceTree = "<group>"; };
-		48DE6FDD1BE9ED5F0017657F /* MAHostingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAHostingView.mm; sourceTree = "<group>"; };
 		48DE6FDF1BE9EF670017657F /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		65A1DE6EADB5D4DF08DEF85A /* Pods_TestProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,8 +170,6 @@
 			children = (
 				48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */,
 				48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */,
-				48DE6FDC1BE9ED5F0017657F /* MAHostingView.h */,
-				48DE6FDD1BE9ED5F0017657F /* MAHostingView.mm */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -341,7 +336,6 @@
 			files = (
 				486D6A3A1B100B6700F794CC /* ViewController.mm in Sources */,
 				48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */,
-				48DE6FDE1BE9ED5F0017657F /* MAHostingView.mm in Sources */,
 				48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */,
 				486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */,
 				486D6A341B100B6700F794CC /* main.m in Sources */,
