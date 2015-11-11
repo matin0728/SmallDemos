@@ -12,6 +12,7 @@
 #import "MAAsyncViewAnimationViewController.h"
 
 static NSString *const kComponentHostingView = @"异步视图的动画支持";
+static NSString *const kAutoLayoutTableViewCell = @"使用自动布局的 TableViewCell";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *table;
