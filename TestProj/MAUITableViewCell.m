@@ -37,9 +37,6 @@
 
   // and now draw the Path!
   CGContextStrokePath(context);
-
-  NSLog(@"Scale: %.f", [UIScreen mainScreen].scale);
-
 }
 
 - (UIColor *)getSeparatorColor {

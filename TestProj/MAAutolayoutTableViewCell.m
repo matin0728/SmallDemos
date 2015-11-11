@@ -25,10 +25,12 @@
   self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
   if (self) {
     self.titleLable = [[UILabel alloc] init];
+    self.titleLable.backgroundColor = [UIColor grayColor];
+    self.titleLable.textColor = [UIColor blackColor];
     self.titleLable.text = @"我是一个 Label";
     [self.contentView addSubview:self.titleLable];
 
-    self.avatarImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    self.avatarImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pic_placeholder.png"]];
     [self.contentView addSubview:self.avatarImage];
   }
 
@@ -54,18 +56,25 @@
   [super updateConstraints];
 }
 
+//- (void)willMoveToSuperview:(UIView *)newSuperview {
+//  [super willMoveToSuperview:newSuperview];
+//  [self setNeedsUpdateConstraints];
+//  [self updateConstraintsIfNeeded];
+//}
+
 - (void)makeConstraints {
   [self.avatarImage mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.contentView).offset(10);
     make.right.equalTo(self.contentView);
     make.bottom.equalTo(self.contentView).offset(-10);
     make.width.mas_equalTo(100);
-    make.height.mas_equalTo(100);
+    make.height.mas_equalTo(100).priorityHigh();
   }];
 
   [self.titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
     make.left.equalTo(self.contentView);
     make.centerY.equalTo(self.avatarImage);
+    make.width.mas_equalTo(200);
   }];
 }
 @end

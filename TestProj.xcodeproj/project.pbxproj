@@ -13,6 +13,7 @@
 		486D6A3F1B100B6700F794CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486D6A3E1B100B6700F794CC /* Images.xcassets */; };
 		486D6A421B100B6700F794CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486D6A401B100B6700F794CC /* LaunchScreen.xib */; };
 		486D6A4E1B100B6700F794CC /* TestProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D6A4D1B100B6700F794CC /* TestProjTests.m */; };
+		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD21BE9CCA20017657F /* MAUITableViewCell.m */; };
 		48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD61BE9E63E0017657F /* UIColor+Addition.m */; };
 		48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */; };
@@ -47,6 +48,7 @@
 		486D6A471B100B6700F794CC /* TestProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486D6A4C1B100B6700F794CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		486D6A4D1B100B6700F794CC /* TestProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjTests.m; sourceTree = "<group>"; };
+		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48DE6FD11BE9CCA20017657F /* MAUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUITableViewCell.h; sourceTree = "<group>"; };
 		48DE6FD21BE9CCA20017657F /* MAUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAUITableViewCell.m; sourceTree = "<group>"; };
 		48DE6FD51BE9E63E0017657F /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		486D6A311B100B6700F794CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */,
 				48DE6FDF1BE9EF670017657F /* test.png */,
 				486D6A321B100B6700F794CC /* Info.plist */,
 				486D6A331B100B6700F794CC /* main.m */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				486D6A421B100B6700F794CC /* LaunchScreen.xib in Resources */,
+				48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */,
 				486D6A3F1B100B6700F794CC /* Images.xcassets in Resources */,
 				48DE6FE01BE9EF670017657F /* test.png in Resources */,
 			);
