@@ -7,11 +7,18 @@
 //
 
 #import "MAPhotoManagerCollectionViewController.h"
+#import "MAPhotoPlusCell.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface MAPhotoManagerCollectionViewController () {
   BOOL isDeletionModeActive;
   NSArray *photos;
 }
+
+//一旦发生顺序修改，或者是添加删除相片，这个为真.
+@property (nonatomic) BOOL hasBeenChanged;
+
+@property (nonatomic) UIButton *editButton;
 
 @end
 
@@ -20,15 +27,22 @@
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
+  [super viewDidLoad];
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+  [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+  [self.collectionView registerClass:MAPhotoPlusCell.class forCellWithReuseIdentifier:@"plus"];
+
+  UIButton *edit = [UIButton buttonWithType:UIButtonTypeCustom];
+  self.editButton = edit;
+  [edit setTitle:@"编辑" forState:UIControlStateNormal];
+  UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:edit];
+  self.navigationItem.rightBarButtonItem = right;
+
+  [[RACObserve(self, hasBeenChanged) map:^id(id value) {
+    return [value boolValue]?@"保存": @"编辑";
+  }] subscribeNext:^(NSString *title) {
+    [self.editButton setTitle:@"编辑" forState:UIControlStateNormal];
+  }];
 }
 
 
@@ -57,6 +71,18 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+  NSInteger index = indexPath.row;
+  if (index == self->photos.count) {
+    //点击了最后一个添加相片的按钮
+    NSLog(@"添加相片");
+  }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath didMoveToIndexPath:(NSIndexPath *)toIndexPath {
+  NSLog(@"确实编过了，这个时候需要显示保存按钮.");
+}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
