@@ -17,4 +17,8 @@
   return attributes;
 }
 
+- (BOOL)isEqual:(id)object {
+  MASpringBoardLayoutAttributes *attr = (MASpringBoardLayoutAttributes *)object;
+  return attr.deletionMode == self.deletionMode;
+}
 @end

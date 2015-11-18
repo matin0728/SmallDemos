@@ -160,9 +160,9 @@ static NSString * const kMACollectionViewKeyPath = @"collectionView";
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
   if ([layoutAttributes.indexPath isEqual:self.selectedItemIndexPath]) {
     layoutAttributes.hidden = YES;
-    MASpringBoardLayoutAttributes *attr = (MASpringBoardLayoutAttributes *)layoutAttributes;
-    attr.deletionMode = [self isDeletionModeOn];
   }
+  MASpringBoardLayoutAttributes *attr = (MASpringBoardLayoutAttributes *)layoutAttributes;
+  attr.deletionMode = [self isDeletionModeOn];
 }
 
 - (id<MASpringCollectionViewDataSource>)dataSource {
@@ -546,6 +546,10 @@ static NSString * const kMACollectionViewKeyPath = @"collectionView";
 #pragma mark Starting from 0.1.0
 - (void)setUpGestureRecognizersOnCollectionView {
   // Do nothing...
+}
+
++ (Class)layoutAttributesClass {
+  return [MASpringBoardLayoutAttributes class];
 }
 
 @end

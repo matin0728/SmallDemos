@@ -29,8 +29,19 @@
 
     self.titleLabel = titleLabel;
     [self.contentView addSubview:titleLabel];
+    NSLog(@"INit: %@", NSStringFromCGRect(titleLabel.frame));
   }
   return self;
+}
+
+- (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+  [super applyLayoutAttributes:layoutAttributes];
+  NSLog(@"BEFORE APPLY: %@", NSStringFromCGRect(self.titleLabel.frame));
+//  self.titleLabel.frame = self.contentView.frame;
+  self.titleLabel.bounds = self.contentView.frame;
+  self.titleLabel.center = self.contentView.center;
+//  [self.titleLabel sizeToFit];
+  NSLog(@"AFTER APPLY: %@", NSStringFromCGRect(self.titleLabel.frame));
 }
 
 @end

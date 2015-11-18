@@ -36,6 +36,7 @@ static NSString *const kPhotoManager = @"相片管理";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+
   self.title = @"Demo 列表";
 
   self.view.backgroundColor = [UIColor whiteColor];
@@ -86,7 +87,16 @@ static NSString *const kPhotoManager = @"相片管理";
   } else if ([row isEqualToString:kAccessAlbum]) {
     controller = [[MAAccessPhotosViewController alloc] init];
   } else if ([row isEqualToString:kPhotoManager]) {
+
+//    @property (nonatomic) CGFloat minimumLineSpacing;
+//    @property (nonatomic) CGFloat minimumInteritemSpacing;
+//    @property (nonatomic) CGSize itemSize;
+
     MASpringBoardLayout *springLayout = [[MASpringBoardLayout alloc] init];
+    springLayout.minimumInteritemSpacing = 5;
+    springLayout.minimumInteritemSpacing = 5;
+    CGFloat WIDTH = [UIScreen mainScreen].bounds.size.width;
+    springLayout.itemSize = CGSizeMake((WIDTH - 5)/2, (WIDTH - 5)/2);
     controller = [[MAPhotoManagerCollectionViewController alloc] initWithCollectionViewLayout:springLayout];
   }
   [self.navigationController pushViewController:controller animated:YES];
