@@ -12,10 +12,13 @@
 #import "MAAsyncViewAnimationViewController.h"
 #import "MAAutoLayoutCellTableViewController.h"
 #import "MAAccessPhotosViewController.h"
+#import "MAPhotoManagerCollectionViewController.h"
+#import "MASpringBoardLayout.h"
 
 static NSString *const kComponentHostingView = @"异步视图的动画支持";
 static NSString *const kAutoLayoutTableViewCell = @"使用自动布局的 TableViewCell";
 static NSString *const kAccessAlbum = @"访问相机和相册";
+static NSString *const kPhotoManager = @"相片管理";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *table;
@@ -82,6 +85,9 @@ static NSString *const kAccessAlbum = @"访问相机和相册";
     controller = [[MAAutoLayoutCellTableViewController alloc] init];
   } else if ([row isEqualToString:kAccessAlbum]) {
     controller = [[MAAccessPhotosViewController alloc] init];
+  } else if ([row isEqualToString:kPhotoManager]) {
+    MASpringBoardLayout *springLayout = [[MASpringBoardLayout alloc] init];
+    controller = [[MAPhotoManagerCollectionViewController alloc] initWithCollectionViewLayout:springLayout];
   }
   [self.navigationController pushViewController:controller animated:YES];
   return nil;
@@ -91,7 +97,7 @@ static NSString *const kAccessAlbum = @"访问相机和相册";
   static NSArray *model;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum];
+    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum, kPhotoManager];
   });
   return model;
 }

@@ -15,6 +15,12 @@
 		486D6A4E1B100B6700F794CC /* TestProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D6A4D1B100B6700F794CC /* TestProjTests.m */; };
 		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */; };
+		48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */; };
+		48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC0C1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m */; };
+		48C8EC101BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC0F1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m */; };
+		48C8EC131BFC40020036CA0F /* MASpringBoardLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC121BFC40020036CA0F /* MASpringBoardLayoutAttributes.m */; };
+		48C8EC171BFC52720036CA0F /* MAPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC161BFC52720036CA0F /* MAPhotoCell.m */; };
+		48C8EC1A1BFC581E0036CA0F /* MAPhotoPlusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC191BFC581E0036CA0F /* MAPhotoPlusCell.m */; };
 		48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD21BE9CCA20017657F /* MAUITableViewCell.m */; };
 		48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD61BE9E63E0017657F /* UIColor+Addition.m */; };
 		48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */; };
@@ -52,6 +58,18 @@
 		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48A0D38A1BF31734007A830F /* MAAccessPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccessPhotosViewController.h; sourceTree = "<group>"; };
 		48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccessPhotosViewController.m; sourceTree = "<group>"; };
+		48C8EC081BFC2C0A0036CA0F /* MASpringBoardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASpringBoardLayout.h; sourceTree = "<group>"; };
+		48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASpringBoardLayout.m; sourceTree = "<group>"; };
+		48C8EC0B1BFC2C360036CA0F /* MAPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		48C8EC0C1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		48C8EC0E1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPhotoManagerCollectionViewController.h; sourceTree = "<group>"; };
+		48C8EC0F1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPhotoManagerCollectionViewController.m; sourceTree = "<group>"; };
+		48C8EC111BFC40020036CA0F /* MASpringBoardLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASpringBoardLayoutAttributes.h; sourceTree = "<group>"; };
+		48C8EC121BFC40020036CA0F /* MASpringBoardLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASpringBoardLayoutAttributes.m; sourceTree = "<group>"; };
+		48C8EC151BFC52720036CA0F /* MAPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPhotoCell.h; sourceTree = "<group>"; };
+		48C8EC161BFC52720036CA0F /* MAPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPhotoCell.m; sourceTree = "<group>"; };
+		48C8EC181BFC581E0036CA0F /* MAPhotoPlusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPhotoPlusCell.h; sourceTree = "<group>"; };
+		48C8EC191BFC581E0036CA0F /* MAPhotoPlusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPhotoPlusCell.m; sourceTree = "<group>"; };
 		48DE6FD11BE9CCA20017657F /* MAUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUITableViewCell.h; sourceTree = "<group>"; };
 		48DE6FD21BE9CCA20017657F /* MAUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAUITableViewCell.m; sourceTree = "<group>"; };
 		48DE6FD51BE9E63E0017657F /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
@@ -117,6 +135,7 @@
 		486D6A301B100B6700F794CC /* TestProj */ = {
 			isa = PBXGroup;
 			children = (
+				48C8EC061BFC2BD00036CA0F /* Module */,
 				48DE6FD81BE9ECD90017657F /* Controllers */,
 				48DE6FD41BE9E6240017657F /* Helper */,
 				48DE6FD01BE9CC7C0017657F /* View */,
@@ -159,6 +178,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		48C8EC061BFC2BD00036CA0F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				48C8EC071BFC2BDA0036CA0F /* SpringBoard */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		48C8EC071BFC2BDA0036CA0F /* SpringBoard */ = {
+			isa = PBXGroup;
+			children = (
+				48C8EC081BFC2C0A0036CA0F /* MASpringBoardLayout.h */,
+				48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */,
+				48C8EC0B1BFC2C360036CA0F /* MAPhotoCollectionViewCell.h */,
+				48C8EC0C1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m */,
+				48C8EC111BFC40020036CA0F /* MASpringBoardLayoutAttributes.h */,
+				48C8EC121BFC40020036CA0F /* MASpringBoardLayoutAttributes.m */,
+			);
+			name = SpringBoard;
+			sourceTree = "<group>";
+		};
+		48C8EC141BFC520F0036CA0F /* PhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				48C8EC0E1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.h */,
+				48C8EC0F1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m */,
+				48C8EC151BFC52720036CA0F /* MAPhotoCell.h */,
+				48C8EC161BFC52720036CA0F /* MAPhotoCell.m */,
+				48C8EC181BFC581E0036CA0F /* MAPhotoPlusCell.h */,
+				48C8EC191BFC581E0036CA0F /* MAPhotoPlusCell.m */,
+			);
+			name = PhotoManager;
+			sourceTree = "<group>";
+		};
 		48DE6FD01BE9CC7C0017657F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +235,7 @@
 		48DE6FD81BE9ECD90017657F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				48C8EC141BFC520F0036CA0F /* PhotoManager */,
 				48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */,
 				48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */,
 				48FB8FFA1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.h */,
@@ -353,13 +407,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C8EC1A1BFC581E0036CA0F /* MAPhotoPlusCell.m in Sources */,
+				48C8EC171BFC52720036CA0F /* MAPhotoCell.m in Sources */,
 				486D6A3A1B100B6700F794CC /* ViewController.mm in Sources */,
+				48C8EC131BFC40020036CA0F /* MASpringBoardLayoutAttributes.m in Sources */,
 				48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */,
 				48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */,
 				48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */,
 				48FB8FFC1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m in Sources */,
+				48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */,
+				48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */,
 				486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */,
 				486D6A341B100B6700F794CC /* main.m in Sources */,
+				48C8EC101BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m in Sources */,
 				48FB8FFF1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m in Sources */,
 				48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */,
 			);
