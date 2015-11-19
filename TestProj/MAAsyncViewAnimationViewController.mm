@@ -64,8 +64,12 @@
                                                          viewAttributes:{
                                                            {{@selector(setBackgroundColor:), [UIColor clearColor]},{@selector(setTag:), @(10086)}}
                                                          }]]
-                            background:[CKImageComponent
-                                        newWithImage:[UIImage imageNamed:@"test.png"]]]];
+                            background:[CKComponent
+                                        newWithView:{
+                                          UIImageView.class,
+                                          {{@selector(setImage:), [UIImage imageNamed:@"test.png"]}, {@selector(setTag:), @(10087)}}
+                                        }
+                                        size:{}]]];
 }
 
 - (void)componentHostingViewDidInvalidateSize:(CKComponentHostingView *)hostingView {
@@ -94,12 +98,16 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   NSLog(@"Conent offset: %.f", scrollView.contentOffset.y);
   UIView *lb = [self.hostingView viewWithTag:10086];
+  UIImageView *headerImage = [self.hostingView viewWithTag:10087];
   CGFloat trans = scrollView.contentOffset.y < 0?-scrollView.contentOffset.y:0;
   if (trans > 0) {
     lb.transform = CGAffineTransformMakeTranslation(0, trans/2);
+    headerImage.transform = CGAffineTransformMakeScale((200+trans)/200, (200+trans)/200);
   } else {
     lb.transform = CGAffineTransformIdentity;
+    headerImage.transform = CGAffineTransformIdentity;
   }
+
 
 }
 

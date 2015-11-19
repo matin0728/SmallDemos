@@ -72,11 +72,6 @@ static NSString * const reuseIdentifier = @"Cell";
   [self.collectionViewLayout invalidateLayout];
 }
 
-- (BOOL)isDeletionModeActiveForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout {
-  return self.deletionMode;
-}
-
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -115,6 +110,7 @@ static NSString * const reuseIdentifier = @"Cell";
   }
 }
 
+#pragma mark <MASpringCollectionViewDataSource>
 - (void)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath didMoveToIndexPath:(NSIndexPath *)toIndexPath {
   NSLog(@"Index: %ld DID MOVE TO : %ld", fromIndexPath.row, toIndexPath.row);
 
@@ -124,8 +120,6 @@ static NSString * const reuseIdentifier = @"Cell";
   [arr insertObject:obj atIndex:toIndexPath.row];
   self->photos = [arr copy];
   //这里不需要 reload Data 的
-//  [self.collectionView reloadData];
-
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -146,15 +140,18 @@ static NSString * const reuseIdentifier = @"Cell";
   return YES;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout didEndDraggingItemAtIndexPath:(NSIndexPath *)indexPath {
-  NSLog(@"完成拖动~~~~~~");
-}
-
+#pragma mark <MASpringCollectionViewDelegateFlowLayout>
 - (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout willBeginDraggingItemAtIndexPath:(NSIndexPath *)indexPath{
   if (!self.editingMode && !self.deletionMode) {
     self.editingMode = YES;
   }
 }
 
+- (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout didEndDraggingItemAtIndexPath:(NSIndexPath *)indexPath {
+  NSLog(@"完成拖动~~~~~~");
+}
 
+- (BOOL)isDeletionModeActiveForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout {
+  return self.deletionMode;
+}
 @end
