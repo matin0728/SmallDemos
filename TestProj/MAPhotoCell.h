@@ -10,4 +10,6 @@
 
 @interface MAPhotoCell : MAPhotoCollectionViewCell
 
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @end

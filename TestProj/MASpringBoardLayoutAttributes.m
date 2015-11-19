@@ -10,7 +10,6 @@
 
 @implementation MASpringBoardLayoutAttributes
 
-
 - (instancetype)copyWithZone:(NSZone *)zone {
   MASpringBoardLayoutAttributes *attributes = [super copyWithZone:zone];
   attributes.deletionMode = self.deletionMode;
@@ -19,6 +18,6 @@
 
 - (BOOL)isEqual:(id)object {
   MASpringBoardLayoutAttributes *attr = (MASpringBoardLayoutAttributes *)object;
-  return attr.deletionMode == self.deletionMode;
+  return (attr.deletionMode == self.deletionMode) &&[super isEqual:object];
 }
 @end

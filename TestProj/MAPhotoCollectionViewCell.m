@@ -63,6 +63,7 @@
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
   [super applyLayoutAttributes:layoutAttributes];
   MASpringBoardLayoutAttributes *attr = (MASpringBoardLayoutAttributes *)layoutAttributes;
+  self.deleteButton.hidden = !attr.deletionMode;
   if (attr.deletionMode) {
     [self startQuivering];
   } else {

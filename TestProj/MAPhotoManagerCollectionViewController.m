@@ -8,7 +8,7 @@
 
 #import "MAPhotoManagerCollectionViewController.h"
 #import "MAPhotoPlusCell.h"
-#import "MAPhotoCollectionViewCell.h"
+#import "MAPhotoCell.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MASpringBoardLayout.h"
 
@@ -18,8 +18,8 @@
 }
 
 //一旦发生顺序修改，或者是添加删除相片，这个为真.
-@property (nonatomic) BOOL hasBeenChanged;
 @property (nonatomic) BOOL deletionMode;
+@property (nonatomic) BOOL editingMode; //当长按生效之后会进入 editing ，除非按下保存按钮。
 
 @property (nonatomic) UIButton *editButton;
 
@@ -32,12 +32,10 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  self->photos = @[@"1", @"2", @"2", @"2", @"2", @"2", @"2"];
+  self->photos = @[@"01", @"02", @"03", @"04", @"05", @"06", @"07"];
     // Register cell classes
-  [self.collectionView registerClass:[MAPhotoCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+  [self.collectionView registerClass:[MAPhotoCell class] forCellWithReuseIdentifier:reuseIdentifier];
   [self.collectionView registerClass:MAPhotoPlusCell.class forCellWithReuseIdentifier:@"plus"];
-
-//  self.collectionView.delegate = self;
 
   UIButton *edit = [UIButton buttonWithType:UIButtonTypeCustom];
   edit.frame = CGRectMake(0, 0, 60, 44);
@@ -49,42 +47,29 @@ static NSString * const reuseIdentifier = @"Cell";
   self.navigationItem.rightBarButtonItem = right;
 
   @weakify(self)
-  [[RACObserve(self, hasBeenChanged) map:^id(id value) {
-    return [value boolValue]?@"保存": @"编辑";
+  [[[RACObserve(self, deletionMode) combineLatestWith:RACObserve(self, editingMode)] map:^id(RACTuple *x) {
+    RACTupleUnpack(NSNumber *deletion, NSNumber *editing) = x;
+    return ([deletion boolValue] || [editing boolValue])?@"保存": @"编辑";
   }] subscribeNext:^(NSString *title) {
     @strongify(self);
-    [self.editButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [self.editButton setTitle:title forState:UIControlStateNormal];
   }];
 }
 
 - (void)onTapEdit: (id)sender {
-  if (self.deletionMode){
+  [self toggleDeletionModel];
+}
+
+- (void)toggleDeletionModel {
+  if (self.deletionMode || self.editingMode){
     self.deletionMode = NO;
+    self.editingMode = NO;
+    //TODO: save current data.
     [self.collectionViewLayout invalidateLayout];
-//    [self.collectionView reloadData];
     return;
   }
-
-  if (self.hasBeenChanged) {
-    //点击应该是保存。
-    //After saving
-    self.deletionMode = NO;
-    self.hasBeenChanged = NO;
-
-    //下面这步应该是异步的。
-   [self.collectionViewLayout invalidateLayout];
-  } else {
-//    self.hasBeenChanged = YES;
-    self.deletionMode = YES;
-
-    NSAssert(self.collectionViewLayout == self.collectionView.collectionViewLayout, @"NOT the layout!!!!!");
-    MASpringBoardLayout *layout = (MASpringBoardLayout *)self.collectionView.collectionViewLayout;
-    [layout invalidateLayout];
-
-//    [self.collectionView reloadData];
-     [self.collectionViewLayout invalidateLayout];
-  }
-
+  self.deletionMode = YES;
+  [self.collectionViewLayout invalidateLayout];
 }
 
 - (BOOL)isDeletionModeActiveForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout {
@@ -108,8 +93,10 @@ static NSString * const reuseIdentifier = @"Cell";
     
   NSInteger index = indexPath.row;
   if (index < self->photos.count) {
-    MAPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    MAPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+
     cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pic_placeholder.png"]];
+    cell.titleLabel.text = self->photos[index];
     return cell;
   }
 
@@ -129,38 +116,45 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath didMoveToIndexPath:(NSIndexPath *)toIndexPath {
-  NSLog(@"确实编过了，这个时候需要显示保存按钮.");
-  self.hasBeenChanged = YES;
+  NSLog(@"Index: %ld DID MOVE TO : %ld", fromIndexPath.row, toIndexPath.row);
+
+  NSMutableArray *arr = [self->photos mutableCopy];
+  id obj = [arr objectAtIndex:fromIndexPath.row];
+  [arr removeObjectAtIndex:fromIndexPath.row];
+  [arr insertObject:obj atIndex:toIndexPath.row];
+  self->photos = [arr copy];
+  //这里不需要 reload Data 的
+//  [self.collectionView reloadData];
+
 }
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.row == self->photos.count) {
+    //不能移动最后一项
+    NSLog(@"CAN MOVE TO INDEX: %ld", indexPath.row);
+    return NO;
+  }
+  return YES;
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
+- (BOOL)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath canMoveToIndexPath:(NSIndexPath *)toIndexPath {
+  //不能移动到最后一项.
+  if (toIndexPath.row == self->photos.count) {
+    NSLog(@"Index CAN MOVE FROM: %ld TO: %ld", fromIndexPath.row, toIndexPath.row);
+    return NO;
+  }
+  return YES;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
+- (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout didEndDraggingItemAtIndexPath:(NSIndexPath *)indexPath {
+  NSLog(@"完成拖动~~~~~~");
 }
-*/
+
+- (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout willBeginDraggingItemAtIndexPath:(NSIndexPath *)indexPath{
+  if (!self.editingMode && !self.deletionMode) {
+    self.editingMode = YES;
+  }
+}
 
 
 @end
