@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4816A7DF1C0D7E970040C4A5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4816A7DE1C0D7E970040C4A5 /* README */; };
+		4816A7E21C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816A7E11C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m */; };
+		4816A7E51C0D7EE80040C4A5 /* MATestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816A7E41C0D7EE80040C4A5 /* MATestSubView.m */; };
 		486D6A341B100B6700F794CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D6A331B100B6700F794CC /* main.m */; };
 		486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 486D6A361B100B6700F794CC /* AppDelegate.mm */; };
 		486D6A3A1B100B6700F794CC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 486D6A391B100B6700F794CC /* ViewController.mm */; };
@@ -43,6 +46,11 @@
 /* Begin PBXFileReference section */
 		13F03BCE6C8EDA4AA445FD30 /* Pods-TestProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProj/Pods-TestProj.release.xcconfig"; sourceTree = "<group>"; };
 		3A093DA4805F1CA5580BC648 /* Pods-TestProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProj/Pods-TestProj.debug.xcconfig"; sourceTree = "<group>"; };
+		4816A7DE1C0D7E970040C4A5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4816A7E01C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASubViewConstraintsTestViewController.h; sourceTree = "<group>"; };
+		4816A7E11C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASubViewConstraintsTestViewController.m; sourceTree = "<group>"; };
+		4816A7E31C0D7EE80040C4A5 /* MATestSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATestSubView.h; sourceTree = "<group>"; };
+		4816A7E41C0D7EE80040C4A5 /* MATestSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATestSubView.m; sourceTree = "<group>"; };
 		486D6A2E1B100B6700F794CC /* TestProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486D6A321B100B6700F794CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		486D6A331B100B6700F794CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +118,18 @@
 				13F03BCE6C8EDA4AA445FD30 /* Pods-TestProj.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4816A7DD1C0D7E820040C4A5 /* SubViewConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				4816A7DE1C0D7E970040C4A5 /* README */,
+				4816A7E01C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.h */,
+				4816A7E11C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m */,
+				4816A7E31C0D7EE80040C4A5 /* MATestSubView.h */,
+				4816A7E41C0D7EE80040C4A5 /* MATestSubView.m */,
+			);
+			name = SubViewConstraint;
 			sourceTree = "<group>";
 		};
 		486D6A251B100B6700F794CC = {
@@ -235,6 +255,7 @@
 		48DE6FD81BE9ECD90017657F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4816A7DD1C0D7E820040C4A5 /* SubViewConstraint */,
 				48C8EC141BFC520F0036CA0F /* PhotoManager */,
 				48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */,
 				48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */,
@@ -338,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4816A7DF1C0D7E970040C4A5 /* README in Resources */,
 				486D6A421B100B6700F794CC /* LaunchScreen.xib in Resources */,
 				48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */,
 				486D6A3F1B100B6700F794CC /* Images.xcassets in Resources */,
@@ -419,7 +441,9 @@
 				48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */,
 				486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */,
 				486D6A341B100B6700F794CC /* main.m in Sources */,
+				4816A7E51C0D7EE80040C4A5 /* MATestSubView.m in Sources */,
 				48C8EC101BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m in Sources */,
+				4816A7E21C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m in Sources */,
 				48FB8FFF1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m in Sources */,
 				48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */,
 			);

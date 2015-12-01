@@ -14,11 +14,14 @@
 #import "MAAccessPhotosViewController.h"
 #import "MAPhotoManagerCollectionViewController.h"
 #import "MASpringBoardLayout.h"
+#import "MASubViewConstraintsTestViewController.h"
+
 
 static NSString *const kComponentHostingView = @"异步视图的动画支持";
 static NSString *const kAutoLayoutTableViewCell = @"使用自动布局的 TableViewCell";
 static NSString *const kAccessAlbum = @"访问相机和相册";
 static NSString *const kPhotoManager = @"相片管理";
+static NSString *const kSubViewConstraints = @"子视图约束";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *table;
@@ -98,6 +101,9 @@ static NSString *const kPhotoManager = @"相片管理";
     CGFloat WIDTH = [UIScreen mainScreen].bounds.size.width;
     springLayout.itemSize = CGSizeMake((WIDTH - 5)/2, (WIDTH - 5)/2);
     controller = [[MAPhotoManagerCollectionViewController alloc] initWithCollectionViewLayout:springLayout];
+  } else if ([row isEqualToString:kSubViewConstraints]) {
+    controller = [[MASubViewConstraintsTestViewController alloc] init];
+
   }
   [self.navigationController pushViewController:controller animated:YES];
   return nil;
@@ -107,7 +113,7 @@ static NSString *const kPhotoManager = @"相片管理";
   static NSArray *model;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum, kPhotoManager];
+    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum, kPhotoManager, kSubViewConstraints];
   });
   return model;
 }

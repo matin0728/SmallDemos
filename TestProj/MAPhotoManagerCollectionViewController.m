@@ -112,7 +112,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <MASpringCollectionViewDataSource>
 - (void)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath didMoveToIndexPath:(NSIndexPath *)toIndexPath {
-  NSLog(@"Index: %ld DID MOVE TO : %ld", fromIndexPath.row, toIndexPath.row);
+  NSLog(@"Index: %ld DID MOVE TO : %ld", (long)fromIndexPath.row, (long)toIndexPath.row);
 
   NSMutableArray *arr = [self->photos mutableCopy];
   id obj = [arr objectAtIndex:fromIndexPath.row];
@@ -125,7 +125,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
   if (indexPath.row == self->photos.count) {
     //不能移动最后一项
-    NSLog(@"CAN MOVE TO INDEX: %ld", indexPath.row);
+    NSLog(@"CAN MOVE TO INDEX: %ld", (long)indexPath.row);
     return NO;
   }
   return YES;
@@ -134,7 +134,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (BOOL)collectionView:(UICollectionView *)collectionView itemAtIndexPath:(NSIndexPath *)fromIndexPath canMoveToIndexPath:(NSIndexPath *)toIndexPath {
   //不能移动到最后一项.
   if (toIndexPath.row == self->photos.count) {
-    NSLog(@"Index CAN MOVE FROM: %ld TO: %ld", fromIndexPath.row, toIndexPath.row);
+    NSLog(@"Index CAN MOVE FROM: %ld TO: %ld", (long)fromIndexPath.row, (long)toIndexPath.row);
     return NO;
   }
   return YES;
