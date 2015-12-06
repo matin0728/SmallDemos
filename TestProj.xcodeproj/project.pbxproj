@@ -72,6 +72,53 @@
 		4876B36B1C142E2400B790A7 /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3591C142E2400B790A7 /* EMVoiceConverter.mm */; };
 		4876B36C1C142E2400B790A7 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4876B35D1C142E2400B790A7 /* libopencore-amrnb.a */; };
 		4876B36D1C142E2400B790A7 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4876B3611C142E2400B790A7 /* libopencore-amrwb.a */; };
+		4876B3DA1C14372400B790A7 /* callRing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4876B3701C14372400B790A7 /* callRing.mp3 */; };
+		4876B3DB1C14372400B790A7 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3721C14372400B790A7 /* CallViewController.m */; };
+		4876B3DC1C14372400B790A7 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3751C14372400B790A7 /* NSDate+Category.m */; };
+		4876B3DD1C14372400B790A7 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3771C14372400B790A7 /* NSDateFormatter+Category.m */; };
+		4876B3DE1C14372400B790A7 /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3791C14372400B790A7 /* NSString+Valid.m */; };
+		4876B3DF1C14372400B790A7 /* UIImageView+HeadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B37B1C14372400B790A7 /* UIImageView+HeadImage.m */; };
+		4876B3E01C14372400B790A7 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B37D1C14372400B790A7 /* UIResponder+Router.m */; };
+		4876B3E11C14372400B790A7 /* UIViewController+DismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B37F1C14372400B790A7 /* UIViewController+DismissKeyboard.m */; };
+		4876B3E21C14372400B790A7 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3811C14372400B790A7 /* UIViewController+HUD.m */; };
+		4876B3E31C14372400B790A7 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3851C14372400B790A7 /* ConversationListController.m */; };
+		4876B3E41C14372400B790A7 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3881C14372400B790A7 /* ChatViewController.m */; };
+		4876B3E51C14372400B790A7 /* CustomMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B38B1C14372400B790A7 /* CustomMessageCell.m */; };
+		4876B3E61C14372400B790A7 /* EMBubbleView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B38D1C14372400B790A7 /* EMBubbleView+Gif.m */; };
+		4876B3E71C14372400B790A7 /* ChatGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3901C14372400B790A7 /* ChatGroupDetailViewController.m */; };
+		4876B3E81C14372400B790A7 /* ContactSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3921C14372400B790A7 /* ContactSelectionViewController.m */; };
+		4876B3E91C14372400B790A7 /* ContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3941C14372400B790A7 /* ContactView.m */; };
+		4876B3EA1C14372400B790A7 /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3961C14372400B790A7 /* CreateGroupViewController.m */; };
+		4876B3EB1C14372400B790A7 /* GroupBansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3981C14372400B790A7 /* GroupBansViewController.m */; };
+		4876B3EC1C14372400B790A7 /* GroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B39A1C14372400B790A7 /* GroupListViewController.m */; };
+		4876B3ED1C14372400B790A7 /* GroupSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B39C1C14372400B790A7 /* GroupSettingViewController.m */; };
+		4876B3EE1C14372400B790A7 /* GroupSubjectChangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B39E1C14372400B790A7 /* GroupSubjectChangingViewController.m */; };
+		4876B3EF1C14372400B790A7 /* PublicGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3A01C14372400B790A7 /* PublicGroupDetailViewController.m */; };
+		4876B3F01C14372400B790A7 /* PublicGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3A21C14372400B790A7 /* PublicGroupListViewController.m */; };
+		4876B3F11C14372400B790A7 /* ChatroomDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3A51C14372400B790A7 /* ChatroomDetailViewController.m */; };
+		4876B3F21C14372400B790A7 /* ChatroomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3A71C14372400B790A7 /* ChatroomListViewController.m */; };
+		4876B3F31C14372400B790A7 /* MyChatroomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3A91C14372400B790A7 /* MyChatroomListViewController.m */; };
+		4876B3F41C14372400B790A7 /* ContactListSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3AC1C14372400B790A7 /* ContactListSelectViewController.m */; };
+		4876B3F51C14372400B790A7 /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3AE1C14372400B790A7 /* ContactListViewController.m */; };
+		4876B3F61C14372400B790A7 /* AddFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3B11C14372400B790A7 /* AddFriendCell.m */; };
+		4876B3F71C14372400B790A7 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3B31C14372400B790A7 /* AddFriendViewController.m */; };
+		4876B3F81C14372400B790A7 /* ApplyFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3B51C14372400B790A7 /* ApplyFriendCell.m */; };
+		4876B3F91C14372400B790A7 /* ApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3B71C14372400B790A7 /* ApplyViewController.m */; };
+		4876B3FA1C14372400B790A7 /* RealtimeSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3B91C14372400B790A7 /* RealtimeSearchUtil.m */; };
+		4876B3FB1C14372400B790A7 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3BC1C14372400B790A7 /* BaseTableViewCell.m */; };
+		4876B3FC1C14372400B790A7 /* EMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3BE1C14372400B790A7 /* EMSearchBar.m */; };
+		4876B3FD1C14372400B790A7 /* EMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3C01C14372400B790A7 /* EMTextView.m */; };
+		4876B3FE1C14372400B790A7 /* EMRemarkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3C31C14372400B790A7 /* EMRemarkImageView.m */; };
+		4876B3FF1C14372400B790A7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3C61C14372400B790A7 /* BaseViewController.m */; };
+		4876B4001C14372400B790A7 /* EMChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3C81C14372400B790A7 /* EMChooseViewController.m */; };
+		4876B4011C14372400B790A7 /* EMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3CA1C14372400B790A7 /* EMNavigationController.m */; };
+		4876B4021C14372400B790A7 /* EMSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3CC1C14372400B790A7 /* EMSearchDisplayController.m */; };
+		4876B4031C14372400B790A7 /* XHMessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3CE1C14372400B790A7 /* XHMessageTextView.m */; };
+		4876B4041C14372400B790A7 /* EMRobotChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D11C14372400B790A7 /* EMRobotChatTextBubbleView.m */; };
+		4876B4051C14372400B790A7 /* EMRotbotChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D31C14372400B790A7 /* EMRotbotChatViewCell.m */; };
+		4876B4061C14372400B790A7 /* RobotChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D51C14372400B790A7 /* RobotChatViewController.m */; };
+		4876B4071C14372400B790A7 /* RobotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D71C14372400B790A7 /* RobotListViewController.m */; };
+		4876B4081C14372400B790A7 /* RobotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D91C14372400B790A7 /* RobotManager.m */; };
 		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */; };
 		48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */; };
@@ -243,6 +290,99 @@
 		4876B35F1C142E2400B790A7 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
 		4876B3601C142E2400B790A7 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
 		4876B3611C142E2400B790A7 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		4876B3701C14372400B790A7 /* callRing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = callRing.mp3; sourceTree = "<group>"; };
+		4876B3711C14372400B790A7 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		4876B3721C14372400B790A7 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		4876B3741C14372400B790A7 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		4876B3751C14372400B790A7 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		4876B3761C14372400B790A7 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		4876B3771C14372400B790A7 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		4876B3781C14372400B790A7 /* NSString+Valid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Valid.h"; sourceTree = "<group>"; };
+		4876B3791C14372400B790A7 /* NSString+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Valid.m"; sourceTree = "<group>"; };
+		4876B37A1C14372400B790A7 /* UIImageView+HeadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HeadImage.h"; sourceTree = "<group>"; };
+		4876B37B1C14372400B790A7 /* UIImageView+HeadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HeadImage.m"; sourceTree = "<group>"; };
+		4876B37C1C14372400B790A7 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		4876B37D1C14372400B790A7 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		4876B37E1C14372400B790A7 /* UIViewController+DismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DismissKeyboard.h"; sourceTree = "<group>"; };
+		4876B37F1C14372400B790A7 /* UIViewController+DismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DismissKeyboard.m"; sourceTree = "<group>"; };
+		4876B3801C14372400B790A7 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		4876B3811C14372400B790A7 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		4876B3841C14372400B790A7 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
+		4876B3851C14372400B790A7 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
+		4876B3871C14372400B790A7 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		4876B3881C14372400B790A7 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		4876B38A1C14372400B790A7 /* CustomMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMessageCell.h; sourceTree = "<group>"; };
+		4876B38B1C14372400B790A7 /* CustomMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMessageCell.m; sourceTree = "<group>"; };
+		4876B38C1C14372400B790A7 /* EMBubbleView+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMBubbleView+Gif.h"; sourceTree = "<group>"; };
+		4876B38D1C14372400B790A7 /* EMBubbleView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMBubbleView+Gif.m"; sourceTree = "<group>"; };
+		4876B38F1C14372400B790A7 /* ChatGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatGroupDetailViewController.h; sourceTree = "<group>"; };
+		4876B3901C14372400B790A7 /* ChatGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatGroupDetailViewController.m; sourceTree = "<group>"; };
+		4876B3911C14372400B790A7 /* ContactSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSelectionViewController.h; sourceTree = "<group>"; };
+		4876B3921C14372400B790A7 /* ContactSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSelectionViewController.m; sourceTree = "<group>"; };
+		4876B3931C14372400B790A7 /* ContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactView.h; sourceTree = "<group>"; };
+		4876B3941C14372400B790A7 /* ContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactView.m; sourceTree = "<group>"; };
+		4876B3951C14372400B790A7 /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
+		4876B3961C14372400B790A7 /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
+		4876B3971C14372400B790A7 /* GroupBansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBansViewController.h; sourceTree = "<group>"; };
+		4876B3981C14372400B790A7 /* GroupBansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBansViewController.m; sourceTree = "<group>"; };
+		4876B3991C14372400B790A7 /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListViewController.h; sourceTree = "<group>"; };
+		4876B39A1C14372400B790A7 /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListViewController.m; sourceTree = "<group>"; };
+		4876B39B1C14372400B790A7 /* GroupSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSettingViewController.h; sourceTree = "<group>"; };
+		4876B39C1C14372400B790A7 /* GroupSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSettingViewController.m; sourceTree = "<group>"; };
+		4876B39D1C14372400B790A7 /* GroupSubjectChangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSubjectChangingViewController.h; sourceTree = "<group>"; };
+		4876B39E1C14372400B790A7 /* GroupSubjectChangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSubjectChangingViewController.m; sourceTree = "<group>"; };
+		4876B39F1C14372400B790A7 /* PublicGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicGroupDetailViewController.h; sourceTree = "<group>"; };
+		4876B3A01C14372400B790A7 /* PublicGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicGroupDetailViewController.m; sourceTree = "<group>"; };
+		4876B3A11C14372400B790A7 /* PublicGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicGroupListViewController.h; sourceTree = "<group>"; };
+		4876B3A21C14372400B790A7 /* PublicGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicGroupListViewController.m; sourceTree = "<group>"; };
+		4876B3A41C14372400B790A7 /* ChatroomDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatroomDetailViewController.h; sourceTree = "<group>"; };
+		4876B3A51C14372400B790A7 /* ChatroomDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatroomDetailViewController.m; sourceTree = "<group>"; };
+		4876B3A61C14372400B790A7 /* ChatroomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatroomListViewController.h; sourceTree = "<group>"; };
+		4876B3A71C14372400B790A7 /* ChatroomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatroomListViewController.m; sourceTree = "<group>"; };
+		4876B3A81C14372400B790A7 /* MyChatroomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChatroomListViewController.h; sourceTree = "<group>"; };
+		4876B3A91C14372400B790A7 /* MyChatroomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChatroomListViewController.m; sourceTree = "<group>"; };
+		4876B3AB1C14372400B790A7 /* ContactListSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListSelectViewController.h; sourceTree = "<group>"; };
+		4876B3AC1C14372400B790A7 /* ContactListSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListSelectViewController.m; sourceTree = "<group>"; };
+		4876B3AD1C14372400B790A7 /* ContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListViewController.h; sourceTree = "<group>"; };
+		4876B3AE1C14372400B790A7 /* ContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListViewController.m; sourceTree = "<group>"; };
+		4876B3B01C14372400B790A7 /* AddFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendCell.h; sourceTree = "<group>"; };
+		4876B3B11C14372400B790A7 /* AddFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendCell.m; sourceTree = "<group>"; };
+		4876B3B21C14372400B790A7 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		4876B3B31C14372400B790A7 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		4876B3B41C14372400B790A7 /* ApplyFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyFriendCell.h; sourceTree = "<group>"; };
+		4876B3B51C14372400B790A7 /* ApplyFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyFriendCell.m; sourceTree = "<group>"; };
+		4876B3B61C14372400B790A7 /* ApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyViewController.h; sourceTree = "<group>"; };
+		4876B3B71C14372400B790A7 /* ApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyViewController.m; sourceTree = "<group>"; };
+		4876B3B81C14372400B790A7 /* RealtimeSearchUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtimeSearchUtil.h; sourceTree = "<group>"; };
+		4876B3B91C14372400B790A7 /* RealtimeSearchUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealtimeSearchUtil.m; sourceTree = "<group>"; };
+		4876B3BB1C14372400B790A7 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		4876B3BC1C14372400B790A7 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		4876B3BD1C14372400B790A7 /* EMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSearchBar.h; sourceTree = "<group>"; };
+		4876B3BE1C14372400B790A7 /* EMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSearchBar.m; sourceTree = "<group>"; };
+		4876B3BF1C14372400B790A7 /* EMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextView.h; sourceTree = "<group>"; };
+		4876B3C01C14372400B790A7 /* EMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTextView.m; sourceTree = "<group>"; };
+		4876B3C21C14372400B790A7 /* EMRemarkImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRemarkImageView.h; sourceTree = "<group>"; };
+		4876B3C31C14372400B790A7 /* EMRemarkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMRemarkImageView.m; sourceTree = "<group>"; };
+		4876B3C51C14372400B790A7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4876B3C61C14372400B790A7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4876B3C71C14372400B790A7 /* EMChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChooseViewController.h; sourceTree = "<group>"; };
+		4876B3C81C14372400B790A7 /* EMChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMChooseViewController.m; sourceTree = "<group>"; };
+		4876B3C91C14372400B790A7 /* EMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMNavigationController.h; sourceTree = "<group>"; };
+		4876B3CA1C14372400B790A7 /* EMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMNavigationController.m; sourceTree = "<group>"; };
+		4876B3CB1C14372400B790A7 /* EMSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSearchDisplayController.h; sourceTree = "<group>"; };
+		4876B3CC1C14372400B790A7 /* EMSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSearchDisplayController.m; sourceTree = "<group>"; };
+		4876B3CD1C14372400B790A7 /* XHMessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMessageTextView.h; sourceTree = "<group>"; };
+		4876B3CE1C14372400B790A7 /* XHMessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHMessageTextView.m; sourceTree = "<group>"; };
+		4876B3D01C14372400B790A7 /* EMRobotChatTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRobotChatTextBubbleView.h; sourceTree = "<group>"; };
+		4876B3D11C14372400B790A7 /* EMRobotChatTextBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMRobotChatTextBubbleView.m; sourceTree = "<group>"; };
+		4876B3D21C14372400B790A7 /* EMRotbotChatViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRotbotChatViewCell.h; sourceTree = "<group>"; };
+		4876B3D31C14372400B790A7 /* EMRotbotChatViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMRotbotChatViewCell.m; sourceTree = "<group>"; };
+		4876B3D41C14372400B790A7 /* RobotChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotChatViewController.h; sourceTree = "<group>"; };
+		4876B3D51C14372400B790A7 /* RobotChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotChatViewController.m; sourceTree = "<group>"; };
+		4876B3D61C14372400B790A7 /* RobotListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotListViewController.h; sourceTree = "<group>"; };
+		4876B3D71C14372400B790A7 /* RobotListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotListViewController.m; sourceTree = "<group>"; };
+		4876B3D81C14372400B790A7 /* RobotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotManager.h; sourceTree = "<group>"; };
+		4876B3D91C14372400B790A7 /* RobotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotManager.m; sourceTree = "<group>"; };
 		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48A0D38A1BF31734007A830F /* MAAccessPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccessPhotosViewController.h; sourceTree = "<group>"; };
 		48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccessPhotosViewController.m; sourceTree = "<group>"; };
@@ -337,6 +477,7 @@
 		486D6A301B100B6700F794CC /* TestProj */ = {
 			isa = PBXGroup;
 			children = (
+				4876B36E1C14372400B790A7 /* ChatModule */,
 				4876B2A01C141D0800B790A7 /* EaseUI */,
 				48C8EC061BFC2BD00036CA0F /* Module */,
 				48DE6FD81BE9ECD90017657F /* Controllers */,
@@ -712,6 +853,218 @@
 			path = "opencore-amrwb";
 			sourceTree = "<group>";
 		};
+		4876B36E1C14372400B790A7 /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				4876B36F1C14372400B790A7 /* Call */,
+				4876B3731C14372400B790A7 /* Category */,
+				4876B3821C14372400B790A7 /* Chat */,
+				4876B38E1C14372400B790A7 /* ChatGroup */,
+				4876B3A31C14372400B790A7 /* Chatroom */,
+				4876B3AA1C14372400B790A7 /* Contacts */,
+				4876B3BA1C14372400B790A7 /* Custom */,
+				4876B3CF1C14372400B790A7 /* Robot */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		4876B36F1C14372400B790A7 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3701C14372400B790A7 /* callRing.mp3 */,
+				4876B3711C14372400B790A7 /* CallViewController.h */,
+				4876B3721C14372400B790A7 /* CallViewController.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		4876B3731C14372400B790A7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3741C14372400B790A7 /* NSDate+Category.h */,
+				4876B3751C14372400B790A7 /* NSDate+Category.m */,
+				4876B3761C14372400B790A7 /* NSDateFormatter+Category.h */,
+				4876B3771C14372400B790A7 /* NSDateFormatter+Category.m */,
+				4876B3781C14372400B790A7 /* NSString+Valid.h */,
+				4876B3791C14372400B790A7 /* NSString+Valid.m */,
+				4876B37A1C14372400B790A7 /* UIImageView+HeadImage.h */,
+				4876B37B1C14372400B790A7 /* UIImageView+HeadImage.m */,
+				4876B37C1C14372400B790A7 /* UIResponder+Router.h */,
+				4876B37D1C14372400B790A7 /* UIResponder+Router.m */,
+				4876B37E1C14372400B790A7 /* UIViewController+DismissKeyboard.h */,
+				4876B37F1C14372400B790A7 /* UIViewController+DismissKeyboard.m */,
+				4876B3801C14372400B790A7 /* UIViewController+HUD.h */,
+				4876B3811C14372400B790A7 /* UIViewController+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4876B3821C14372400B790A7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3831C14372400B790A7 /* ChatList */,
+				4876B3861C14372400B790A7 /* ChatView */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		4876B3831C14372400B790A7 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3841C14372400B790A7 /* ConversationListController.h */,
+				4876B3851C14372400B790A7 /* ConversationListController.m */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		4876B3861C14372400B790A7 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3871C14372400B790A7 /* ChatViewController.h */,
+				4876B3881C14372400B790A7 /* ChatViewController.m */,
+				4876B3891C14372400B790A7 /* CustomizableCell */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		4876B3891C14372400B790A7 /* CustomizableCell */ = {
+			isa = PBXGroup;
+			children = (
+				4876B38A1C14372400B790A7 /* CustomMessageCell.h */,
+				4876B38B1C14372400B790A7 /* CustomMessageCell.m */,
+				4876B38C1C14372400B790A7 /* EMBubbleView+Gif.h */,
+				4876B38D1C14372400B790A7 /* EMBubbleView+Gif.m */,
+			);
+			path = CustomizableCell;
+			sourceTree = "<group>";
+		};
+		4876B38E1C14372400B790A7 /* ChatGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4876B38F1C14372400B790A7 /* ChatGroupDetailViewController.h */,
+				4876B3901C14372400B790A7 /* ChatGroupDetailViewController.m */,
+				4876B3911C14372400B790A7 /* ContactSelectionViewController.h */,
+				4876B3921C14372400B790A7 /* ContactSelectionViewController.m */,
+				4876B3931C14372400B790A7 /* ContactView.h */,
+				4876B3941C14372400B790A7 /* ContactView.m */,
+				4876B3951C14372400B790A7 /* CreateGroupViewController.h */,
+				4876B3961C14372400B790A7 /* CreateGroupViewController.m */,
+				4876B3971C14372400B790A7 /* GroupBansViewController.h */,
+				4876B3981C14372400B790A7 /* GroupBansViewController.m */,
+				4876B3991C14372400B790A7 /* GroupListViewController.h */,
+				4876B39A1C14372400B790A7 /* GroupListViewController.m */,
+				4876B39B1C14372400B790A7 /* GroupSettingViewController.h */,
+				4876B39C1C14372400B790A7 /* GroupSettingViewController.m */,
+				4876B39D1C14372400B790A7 /* GroupSubjectChangingViewController.h */,
+				4876B39E1C14372400B790A7 /* GroupSubjectChangingViewController.m */,
+				4876B39F1C14372400B790A7 /* PublicGroupDetailViewController.h */,
+				4876B3A01C14372400B790A7 /* PublicGroupDetailViewController.m */,
+				4876B3A11C14372400B790A7 /* PublicGroupListViewController.h */,
+				4876B3A21C14372400B790A7 /* PublicGroupListViewController.m */,
+			);
+			path = ChatGroup;
+			sourceTree = "<group>";
+		};
+		4876B3A31C14372400B790A7 /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3A41C14372400B790A7 /* ChatroomDetailViewController.h */,
+				4876B3A51C14372400B790A7 /* ChatroomDetailViewController.m */,
+				4876B3A61C14372400B790A7 /* ChatroomListViewController.h */,
+				4876B3A71C14372400B790A7 /* ChatroomListViewController.m */,
+				4876B3A81C14372400B790A7 /* MyChatroomListViewController.h */,
+				4876B3A91C14372400B790A7 /* MyChatroomListViewController.m */,
+			);
+			path = Chatroom;
+			sourceTree = "<group>";
+		};
+		4876B3AA1C14372400B790A7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3AB1C14372400B790A7 /* ContactListSelectViewController.h */,
+				4876B3AC1C14372400B790A7 /* ContactListSelectViewController.m */,
+				4876B3AD1C14372400B790A7 /* ContactListViewController.h */,
+				4876B3AE1C14372400B790A7 /* ContactListViewController.m */,
+				4876B3AF1C14372400B790A7 /* FriendApply */,
+				4876B3B81C14372400B790A7 /* RealtimeSearchUtil.h */,
+				4876B3B91C14372400B790A7 /* RealtimeSearchUtil.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		4876B3AF1C14372400B790A7 /* FriendApply */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3B01C14372400B790A7 /* AddFriendCell.h */,
+				4876B3B11C14372400B790A7 /* AddFriendCell.m */,
+				4876B3B21C14372400B790A7 /* AddFriendViewController.h */,
+				4876B3B31C14372400B790A7 /* AddFriendViewController.m */,
+				4876B3B41C14372400B790A7 /* ApplyFriendCell.h */,
+				4876B3B51C14372400B790A7 /* ApplyFriendCell.m */,
+				4876B3B61C14372400B790A7 /* ApplyViewController.h */,
+				4876B3B71C14372400B790A7 /* ApplyViewController.m */,
+			);
+			path = FriendApply;
+			sourceTree = "<group>";
+		};
+		4876B3BA1C14372400B790A7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3BB1C14372400B790A7 /* BaseTableViewCell.h */,
+				4876B3BC1C14372400B790A7 /* BaseTableViewCell.m */,
+				4876B3BD1C14372400B790A7 /* EMSearchBar.h */,
+				4876B3BE1C14372400B790A7 /* EMSearchBar.m */,
+				4876B3BF1C14372400B790A7 /* EMTextView.h */,
+				4876B3C01C14372400B790A7 /* EMTextView.m */,
+				4876B3C11C14372400B790A7 /* View */,
+				4876B3C41C14372400B790A7 /* ViewController */,
+				4876B3CD1C14372400B790A7 /* XHMessageTextView.h */,
+				4876B3CE1C14372400B790A7 /* XHMessageTextView.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		4876B3C11C14372400B790A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3C21C14372400B790A7 /* EMRemarkImageView.h */,
+				4876B3C31C14372400B790A7 /* EMRemarkImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4876B3C41C14372400B790A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3C51C14372400B790A7 /* BaseViewController.h */,
+				4876B3C61C14372400B790A7 /* BaseViewController.m */,
+				4876B3C71C14372400B790A7 /* EMChooseViewController.h */,
+				4876B3C81C14372400B790A7 /* EMChooseViewController.m */,
+				4876B3C91C14372400B790A7 /* EMNavigationController.h */,
+				4876B3CA1C14372400B790A7 /* EMNavigationController.m */,
+				4876B3CB1C14372400B790A7 /* EMSearchDisplayController.h */,
+				4876B3CC1C14372400B790A7 /* EMSearchDisplayController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4876B3CF1C14372400B790A7 /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				4876B3D01C14372400B790A7 /* EMRobotChatTextBubbleView.h */,
+				4876B3D11C14372400B790A7 /* EMRobotChatTextBubbleView.m */,
+				4876B3D21C14372400B790A7 /* EMRotbotChatViewCell.h */,
+				4876B3D31C14372400B790A7 /* EMRotbotChatViewCell.m */,
+				4876B3D41C14372400B790A7 /* RobotChatViewController.h */,
+				4876B3D51C14372400B790A7 /* RobotChatViewController.m */,
+				4876B3D61C14372400B790A7 /* RobotListViewController.h */,
+				4876B3D71C14372400B790A7 /* RobotListViewController.m */,
+				4876B3D81C14372400B790A7 /* RobotManager.h */,
+				4876B3D91C14372400B790A7 /* RobotManager.m */,
+			);
+			path = Robot;
+			sourceTree = "<group>";
+		};
 		48C8EC061BFC2BD00036CA0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -877,6 +1230,7 @@
 				486D6A421B100B6700F794CC /* LaunchScreen.xib in Resources */,
 				48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */,
 				486D6A3F1B100B6700F794CC /* Images.xcassets in Resources */,
+				4876B3DA1C14372400B790A7 /* callRing.mp3 in Resources */,
 				48DE6FE01BE9EF670017657F /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,70 +1301,116 @@
 				4876B3171C141D0800B790A7 /* NSObject+EaseMob.m in Sources */,
 				4876B3631C142E2400B790A7 /* EMAudioRecorderUtil.m in Sources */,
 				4876B3341C141D0800B790A7 /* EaseChatToolbarItem.m in Sources */,
+				4876B3F71C14372400B790A7 /* AddFriendViewController.m in Sources */,
 				48C8EC1A1BFC581E0036CA0F /* MAPhotoPlusCell.m in Sources */,
 				4876B3261C141D0800B790A7 /* EaseUsersListViewController.m in Sources */,
 				4876B3161C141D0800B790A7 /* NSDateFormatter+Category.m in Sources */,
 				4876B33B1C141D0800B790A7 /* EaseConversationCell.m in Sources */,
 				48C8EC171BFC52720036CA0F /* MAPhotoCell.m in Sources */,
+				4876B3E71C14372400B790A7 /* ChatGroupDetailViewController.m in Sources */,
+				4876B3FE1C14372400B790A7 /* EMRemarkImageView.m in Sources */,
 				4876B3251C141D0800B790A7 /* EaseRefreshTableViewController.m in Sources */,
 				4876B36A1C142E2400B790A7 /* wav.mm in Sources */,
+				4876B3EB1C14372400B790A7 /* GroupBansViewController.m in Sources */,
+				4876B3DD1C14372400B790A7 /* NSDateFormatter+Category.m in Sources */,
+				4876B4001C14372400B790A7 /* EMChooseViewController.m in Sources */,
+				4876B3E91C14372400B790A7 /* ContactView.m in Sources */,
 				4876B3111C141D0800B790A7 /* EaseSDKHelper.m in Sources */,
 				486D6A3A1B100B6700F794CC /* ViewController.mm in Sources */,
 				48C8EC131BFC40020036CA0F /* MASpringBoardLayoutAttributes.m in Sources */,
 				4876B3391C141D0800B790A7 /* EaseChatBarMoreView.m in Sources */,
 				4876B32C1C141D0800B790A7 /* EaseBubbleView+File.m in Sources */,
+				4876B3E41C14372400B790A7 /* ChatViewController.m in Sources */,
 				48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */,
 				4876B3131C141D0800B790A7 /* EaseMessageModel.m in Sources */,
+				4876B3F31C14372400B790A7 /* MyChatroomListViewController.m in Sources */,
+				4876B4011C14372400B790A7 /* EMNavigationController.m in Sources */,
+				4876B3ED1C14372400B790A7 /* GroupSettingViewController.m in Sources */,
 				4876B3681C142E2400B790A7 /* EMCDDeviceManagerBase.m in Sources */,
 				4876B3371C141D0800B790A7 /* EaseFaceView.m in Sources */,
 				4876B3661C142E2400B790A7 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
+				4876B3EA1C14372400B790A7 /* CreateGroupViewController.m in Sources */,
+				4876B3F51C14372400B790A7 /* ContactListViewController.m in Sources */,
 				4876B32F1C141D0800B790A7 /* EaseBubbleView+Text.m in Sources */,
+				4876B4031C14372400B790A7 /* XHMessageTextView.m in Sources */,
+				4876B4081C14372400B790A7 /* RobotManager.m in Sources */,
 				4876B3361C141D0800B790A7 /* EaseTextView.m in Sources */,
+				4876B3FA1C14372400B790A7 /* RealtimeSearchUtil.m in Sources */,
 				48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */,
+				4876B3DC1C14372400B790A7 /* NSDate+Category.m in Sources */,
 				48DE6FD31BE9CCA20017657F /* MAUITableViewCell.m in Sources */,
 				4876B31B1C141D0800B790A7 /* EaseChineseToPinyin.m in Sources */,
+				4876B3EF1C14372400B790A7 /* PublicGroupDetailViewController.m in Sources */,
 				48FB8FFC1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m in Sources */,
 				4876B3141C141D0800B790A7 /* EaseUserModel.m in Sources */,
+				4876B3FC1C14372400B790A7 /* EMSearchBar.m in Sources */,
 				48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */,
 				48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */,
 				486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */,
 				4876B3151C141D0800B790A7 /* NSDate+Category.m in Sources */,
 				4876B3271C141D0800B790A7 /* EaseViewController.m in Sources */,
+				4876B3F01C14372400B790A7 /* PublicGroupListViewController.m in Sources */,
+				4876B3EC1C14372400B790A7 /* GroupListViewController.m in Sources */,
+				4876B3FD1C14372400B790A7 /* EMTextView.m in Sources */,
+				4876B3F11C14372400B790A7 /* ChatroomDetailViewController.m in Sources */,
 				4876B3621C142E2400B790A7 /* EMAudioPlayerUtil.m in Sources */,
 				4876B3221C141D0800B790A7 /* EaseConversationListViewController.m in Sources */,
+				4876B4071C14372400B790A7 /* RobotListViewController.m in Sources */,
+				4876B3F81C14372400B790A7 /* ApplyFriendCell.m in Sources */,
 				4876B3101C141D0800B790A7 /* EaseUI.m in Sources */,
 				4876B3231C141D0800B790A7 /* EaseLocationViewController.m in Sources */,
 				486D6A341B100B6700F794CC /* main.m in Sources */,
 				4876B3641C142E2400B790A7 /* EMCDDeviceManager+Media.m in Sources */,
 				4816A7E51C0D7EE80040C4A5 /* MATestSubView.m in Sources */,
 				4876B3691C142E2400B790A7 /* amrFileCodec.mm in Sources */,
+				4876B4051C14372400B790A7 /* EMRotbotChatViewCell.m in Sources */,
 				4876B31D1C141D0800B790A7 /* EaseMessageReadManager.m in Sources */,
 				4876B32E1C141D0800B790A7 /* EaseBubbleView+Location.m in Sources */,
+				4876B3FB1C14372400B790A7 /* BaseTableViewCell.m in Sources */,
+				4876B3F91C14372400B790A7 /* ApplyViewController.m in Sources */,
 				48C8EC101BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m in Sources */,
+				4876B3DF1C14372400B790A7 /* UIImageView+HeadImage.m in Sources */,
 				4876B3321C141D0800B790A7 /* EaseBubbleView.m in Sources */,
 				4876B31E1C141D0800B790A7 /* EaseEmoji.m in Sources */,
 				4876B32D1C141D0800B790A7 /* EaseBubbleView+Image.m in Sources */,
+				4876B3E61C14372400B790A7 /* EMBubbleView+Gif.m in Sources */,
+				4876B3DE1C14372400B790A7 /* NSString+Valid.m in Sources */,
+				4876B4061C14372400B790A7 /* RobotChatViewController.m in Sources */,
 				4876B3121C141D0800B790A7 /* EaseConversationModel.m in Sources */,
+				4876B3FF1C14372400B790A7 /* BaseViewController.m in Sources */,
 				4876B3201C141D0800B790A7 /* EaseEmotionEscape.m in Sources */,
+				4876B3E01C14372400B790A7 /* UIResponder+Router.m in Sources */,
 				4876B3301C141D0800B790A7 /* EaseBubbleView+Video.m in Sources */,
 				4816A7E21C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m in Sources */,
+				4876B3EE1C14372400B790A7 /* GroupSubjectChangingViewController.m in Sources */,
 				4876B36B1C142E2400B790A7 /* EMVoiceConverter.mm in Sources */,
 				48FB8FFF1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m in Sources */,
 				4876B3291C141D0800B790A7 /* EaseBaseMessageCell.m in Sources */,
 				4876B32B1C141D0800B790A7 /* EaseMessageTimeCell.m in Sources */,
 				4876B3181C141D0800B790A7 /* NSString+Valid.m in Sources */,
+				4876B4021C14372400B790A7 /* EMSearchDisplayController.m in Sources */,
 				4876B33A1C141D0800B790A7 /* EaseRecordView.m in Sources */,
+				4876B3F41C14372400B790A7 /* ContactListSelectViewController.m in Sources */,
 				4876B3351C141D0800B790A7 /* EaseImageView.m in Sources */,
 				4876B31C1C141D0800B790A7 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
+				4876B3F21C14372400B790A7 /* ChatroomListViewController.m in Sources */,
 				4876B3281C141D0800B790A7 /* EaseUserCell.m in Sources */,
 				4876B3311C141D0800B790A7 /* EaseBubbleView+Voice.m in Sources */,
+				4876B3E31C14372400B790A7 /* ConversationListController.m in Sources */,
+				4876B3E11C14372400B790A7 /* UIViewController+DismissKeyboard.m in Sources */,
 				4876B3381C141D0800B790A7 /* EaseFacialView.m in Sources */,
 				4876B31A1C141D0800B790A7 /* UIViewController+HUD.m in Sources */,
+				4876B3E81C14372400B790A7 /* ContactSelectionViewController.m in Sources */,
 				4876B32A1C141D0800B790A7 /* EaseMessageCell.m in Sources */,
+				4876B3E21C14372400B790A7 /* UIViewController+HUD.m in Sources */,
 				4876B3241C141D0800B790A7 /* EaseMessageViewController.m in Sources */,
 				4876B3331C141D0800B790A7 /* EaseChatToolbar.m in Sources */,
+				4876B3DB1C14372400B790A7 /* CallViewController.m in Sources */,
 				4876B3211C141D0800B790A7 /* EaseEmotionManager.m in Sources */,
+				4876B3F61C14372400B790A7 /* AddFriendCell.m in Sources */,
+				4876B4041C14372400B790A7 /* EMRobotChatTextBubbleView.m in Sources */,
 				48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */,
+				4876B3E51C14372400B790A7 /* CustomMessageCell.m in Sources */,
 				4876B3651C142E2400B790A7 /* EMCDDeviceManager+Microphone.m in Sources */,
 				4876B3671C142E2400B790A7 /* EMCDDeviceManager+Remind.m in Sources */,
 				4876B31F1C141D0800B790A7 /* EaseEmojiEmoticons.m in Sources */,
