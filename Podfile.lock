@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - ComponentKit (0.13)
+  - EaseMobSDKFull (2.2.1)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -68,13 +69,24 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
   - ComponentKit (~> 0.13)
+  - EaseMobSDKFull (from `https://github.com/easemob/sdk-ios-cocoapods-integration.git`)
   - libextobjc (~> 0.4.1)
   - Masonry (~> 0.6.3)
   - ReactiveCocoa (= 2.5)
 
+EXTERNAL SOURCES:
+  EaseMobSDKFull:
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
+CHECKOUT OPTIONS:
+  EaseMobSDKFull:
+    :commit: c4a63a69518d396309e8d6c267f2756cac3877ee
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   ComponentKit: b79a11f258ef71c44e3be976e4929c6eb4144c58
+  EaseMobSDKFull: 4a18d6ad47b4ccca564833963511bddd151e1654
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a

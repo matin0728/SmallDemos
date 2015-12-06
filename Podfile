@@ -8,4 +8,6 @@ target 'TestProj' do
   pod 'Masonry', '~> 0.6.3'
   pod 'ReactiveCocoa', '2.5'
   pod 'libextobjc', '~> 0.4.1'
+  pod 'EaseMobSDKFull', :git => 'https://github.com/easemob/sdk-ios-cocoapods-integration.git'
+
 end
