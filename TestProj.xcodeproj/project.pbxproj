@@ -119,6 +119,8 @@
 		4876B4061C14372400B790A7 /* RobotChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D51C14372400B790A7 /* RobotChatViewController.m */; };
 		4876B4071C14372400B790A7 /* RobotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D71C14372400B790A7 /* RobotListViewController.m */; };
 		4876B4081C14372400B790A7 /* RobotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B3D91C14372400B790A7 /* RobotManager.m */; };
+		4876B40E1C1437AE00B790A7 /* InvitationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B40B1C1437AE00B790A7 /* InvitationManager.m */; };
+		4876B40F1C1437AE00B790A7 /* UserProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B40D1C1437AE00B790A7 /* UserProfileManager.m */; };
 		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */; };
 		48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */; };
@@ -383,6 +385,10 @@
 		4876B3D71C14372400B790A7 /* RobotListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotListViewController.m; sourceTree = "<group>"; };
 		4876B3D81C14372400B790A7 /* RobotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotManager.h; sourceTree = "<group>"; };
 		4876B3D91C14372400B790A7 /* RobotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotManager.m; sourceTree = "<group>"; };
+		4876B40A1C1437AE00B790A7 /* InvitationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationManager.h; sourceTree = "<group>"; };
+		4876B40B1C1437AE00B790A7 /* InvitationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationManager.m; sourceTree = "<group>"; };
+		4876B40C1C1437AE00B790A7 /* UserProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileManager.h; sourceTree = "<group>"; };
+		4876B40D1C1437AE00B790A7 /* UserProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileManager.m; sourceTree = "<group>"; };
 		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48A0D38A1BF31734007A830F /* MAAccessPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccessPhotosViewController.h; sourceTree = "<group>"; };
 		48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccessPhotosViewController.m; sourceTree = "<group>"; };
@@ -856,6 +862,7 @@
 		4876B36E1C14372400B790A7 /* ChatModule */ = {
 			isa = PBXGroup;
 			children = (
+				4876B4091C1437AE00B790A7 /* Core Data */,
 				4876B36F1C14372400B790A7 /* Call */,
 				4876B3731C14372400B790A7 /* Category */,
 				4876B3821C14372400B790A7 /* Chat */,
@@ -1064,6 +1071,18 @@
 			);
 			path = Robot;
 			sourceTree = "<group>";
+		};
+		4876B4091C1437AE00B790A7 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4876B40A1C1437AE00B790A7 /* InvitationManager.h */,
+				4876B40B1C1437AE00B790A7 /* InvitationManager.m */,
+				4876B40C1C1437AE00B790A7 /* UserProfileManager.h */,
+				4876B40D1C1437AE00B790A7 /* UserProfileManager.m */,
+			);
+			name = "Core Data";
+			path = "TestProj/ChatModule/Core Data";
+			sourceTree = SOURCE_ROOT;
 		};
 		48C8EC061BFC2BD00036CA0F /* Module */ = {
 			isa = PBXGroup;
@@ -1364,6 +1383,7 @@
 				4816A7E51C0D7EE80040C4A5 /* MATestSubView.m in Sources */,
 				4876B3691C142E2400B790A7 /* amrFileCodec.mm in Sources */,
 				4876B4051C14372400B790A7 /* EMRotbotChatViewCell.m in Sources */,
+				4876B40F1C1437AE00B790A7 /* UserProfileManager.m in Sources */,
 				4876B31D1C141D0800B790A7 /* EaseMessageReadManager.m in Sources */,
 				4876B32E1C141D0800B790A7 /* EaseBubbleView+Location.m in Sources */,
 				4876B3FB1C14372400B790A7 /* BaseTableViewCell.m in Sources */,
@@ -1387,6 +1407,7 @@
 				48FB8FFF1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m in Sources */,
 				4876B3291C141D0800B790A7 /* EaseBaseMessageCell.m in Sources */,
 				4876B32B1C141D0800B790A7 /* EaseMessageTimeCell.m in Sources */,
+				4876B40E1C1437AE00B790A7 /* InvitationManager.m in Sources */,
 				4876B3181C141D0800B790A7 /* NSString+Valid.m in Sources */,
 				4876B4021C14372400B790A7 /* EMSearchDisplayController.m in Sources */,
 				4876B33A1C141D0800B790A7 /* EaseRecordView.m in Sources */,
