@@ -10,6 +10,7 @@
   * from EaseMob Technologies.
   */
 
+#import "ChatCommon.h"
 #import "EMChooseViewController.h"
 
 @interface EMChooseViewController ()

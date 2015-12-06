@@ -10,6 +10,7 @@
  * from EaseMob Technologies.
  */
 
+#import "ChatCommon.h"
 #import "ChatroomDetailViewController.h"
 #import "EMChatroom.h"
 #import "ContactView.h"

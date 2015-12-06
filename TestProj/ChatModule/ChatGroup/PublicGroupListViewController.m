@@ -10,6 +10,7 @@
   * from EaseMob Technologies.
   */
 
+#import "ChatCommon.h"
 #import "PublicGroupListViewController.h"
 
 #import "EMSearchBar.h"

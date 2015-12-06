@@ -8,6 +8,7 @@
 
 //#import "EMChatTextBubbleView.h"
 
+#import "ChatCommon.h"
 @interface EMRobotChatTextBubbleView : NSObject
 
 @end

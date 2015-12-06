@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 easemob.com. All rights reserved.
 //
 
+#import "ChatCommon.h"
 #import "ContactListViewController.h"
 
 //#import "EaseChineseToPinyin.h"

@@ -9,7 +9,7 @@
   * is strictly forbidden unless prior written permission is obtained
   * from EaseMob Technologies.
   */
-
+#import "ChatCommon.h"
 #import "UIViewController+HUD.h"
 #import "MBProgressHUD.h"
 #import <objc/runtime.h>

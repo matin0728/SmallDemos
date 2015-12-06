@@ -10,6 +10,7 @@
   * from EaseMob Technologies.
   */
 
+#import "ChatCommon.h"
 #import "PublicGroupDetailViewController.h"
 
 @interface PublicGroupDetailViewController ()<UIAlertViewDelegate>

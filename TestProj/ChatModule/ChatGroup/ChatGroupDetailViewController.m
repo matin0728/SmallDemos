@@ -10,6 +10,7 @@
  * from EaseMob Technologies.
  */
 
+#import "ChatCommon.h"
 #import "ChatGroupDetailViewController.h"
 
 #import "ContactSelectionViewController.h"

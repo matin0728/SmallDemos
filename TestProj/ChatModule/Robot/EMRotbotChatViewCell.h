@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 dujiepeng. All rights reserved.
 //
 
+#import "ChatCommon.h"
 @interface EMRotbotChatViewCell : EaseMessageCell
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #define KNOTIFICATIONNAME_DELETEALLMESSAGE @"RemoveAllMessages"
+#import "ChatCommon.h"
 
 @interface ChatViewController : EaseMessageViewController
 

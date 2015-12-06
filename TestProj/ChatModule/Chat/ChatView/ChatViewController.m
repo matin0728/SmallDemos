@@ -6,12 +6,13 @@
 //  Copyright (c) 2015年 easemob.com. All rights reserved.
 //
 
+#import "ChatCommon.h"
 #import "ChatViewController.h"
 
 #import "ChatGroupDetailViewController.h"
 #import "ChatroomDetailViewController.h"
 #import "CustomMessageCell.h"
-#import "UserProfileViewController.h"
+//#import "UserProfileViewController.h"
 #import "UserProfileManager.h"
 #import "ContactListSelectViewController.h"
 
@@ -173,8 +174,9 @@
 - (void)messageViewController:(EaseMessageViewController *)viewController
    didSelectAvatarMessageModel:(id<IMessageModel>)messageModel
 {
-    UserProfileViewController *userprofile = [[UserProfileViewController alloc] initWithUsername:messageModel.nickname];
-    [self.navigationController pushViewController:userprofile animated:YES];
+  //TODO: Navigate to user profile.
+//    UserProfileViewController *userprofile = [[UserProfileViewController alloc] initWithUsername:messageModel.nickname];
+//    [self.navigationController pushViewController:userprofile animated:YES];
 }
 
 

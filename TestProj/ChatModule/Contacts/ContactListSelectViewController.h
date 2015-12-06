@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 EaseMob. All rights reserved.
 //
 
+#import "ChatCommon.h"
 @interface ContactListSelectViewController : EaseUsersListViewController
 
 @property (strong ,nonatomic) EaseMessageModel *messageModel;

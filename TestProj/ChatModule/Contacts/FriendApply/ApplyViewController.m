@@ -10,6 +10,7 @@
   * from EaseMob Technologies.
   */
 
+#import "ChatCommon.h"
 #import "ApplyViewController.h"
 
 #import "ApplyFriendCell.h"

@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 EaseMob. All rights reserved.
 //
 
+#import "ChatCommon.h"
 #import "ContactListSelectViewController.h"
 
 #import "ChatViewController.h"

@@ -11,7 +11,7 @@
   */
 
 #import <UIKit/UIKit.h>
-
+#import "ChatCommon.h"
 /**
  *  群组成员类型
  */

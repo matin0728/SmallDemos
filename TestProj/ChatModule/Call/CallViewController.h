@@ -10,6 +10,7 @@
  * from EaseMob Technologies.
  */
 
+#import "ChatCommon.h"
 #import <AVFoundation/AVFoundation.h>
 #import <CoreTelephony/CTCallCenter.h>
 #import <UIKit/UIKit.h>

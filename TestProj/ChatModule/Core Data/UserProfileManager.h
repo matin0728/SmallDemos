@@ -12,6 +12,7 @@
 
 //  用来处理UIDemo上Parse相关逻辑
 
+#import "ChatCommon.h"
 #import <Foundation/Foundation.h>
 
 #define kPARSE_HXUSER @"hxuser"

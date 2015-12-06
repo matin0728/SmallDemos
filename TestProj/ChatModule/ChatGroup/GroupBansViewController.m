@@ -10,6 +10,7 @@
  * from EaseMob Technologies.
  */
 
+#import "ChatCommon.h"
 #import "GroupBansViewController.h"
 
 #import "ContactView.h"
