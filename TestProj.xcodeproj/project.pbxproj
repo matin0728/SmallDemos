@@ -129,11 +129,6 @@
 		4876B43D1C143A8F00B790A7 /* SRSlimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B4211C143A8F00B790A7 /* SRSlimeView.m */; };
 		4876B43E1C143A8F00B790A7 /* THProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B4241C143A8F00B790A7 /* THProgressView.m */; };
 		4876B43F1C143A8F00B790A7 /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B4271C143A8F00B790A7 /* TTGlobalUICommon.m */; };
-		4876B4401C143A8F00B790A7 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4876B42B1C143A8F00B790A7 /* amrFileCodec.mm */; };
-		4876B4411C143A8F00B790A7 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4876B42D1C143A8F00B790A7 /* wav.mm */; };
-		4876B4421C143A8F00B790A7 /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4876B42F1C143A8F00B790A7 /* EMVoiceConverter.mm */; };
-		4876B4431C143A8F00B790A7 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4876B4331C143A8F00B790A7 /* libopencore-amrnb.a */; };
-		4876B4441C143A8F00B790A7 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4876B4371C143A8F00B790A7 /* libopencore-amrwb.a */; };
 		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */; };
 		48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */; };
@@ -420,18 +415,6 @@
 		4876B4241C143A8F00B790A7 /* THProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THProgressView.m; sourceTree = "<group>"; };
 		4876B4261C143A8F00B790A7 /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalUICommon.h; sourceTree = "<group>"; };
 		4876B4271C143A8F00B790A7 /* TTGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalUICommon.m; sourceTree = "<group>"; };
-		4876B42A1C143A8F00B790A7 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
-		4876B42B1C143A8F00B790A7 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
-		4876B42C1C143A8F00B790A7 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
-		4876B42D1C143A8F00B790A7 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
-		4876B42E1C143A8F00B790A7 /* EMVoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceConverter.h; sourceTree = "<group>"; };
-		4876B42F1C143A8F00B790A7 /* EMVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMVoiceConverter.mm; sourceTree = "<group>"; };
-		4876B4311C143A8F00B790A7 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
-		4876B4321C143A8F00B790A7 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
-		4876B4331C143A8F00B790A7 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		4876B4351C143A8F00B790A7 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
-		4876B4361C143A8F00B790A7 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
-		4876B4371C143A8F00B790A7 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
 		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48A0D38A1BF31734007A830F /* MAAccessPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccessPhotosViewController.h; sourceTree = "<group>"; };
 		48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccessPhotosViewController.m; sourceTree = "<group>"; };
@@ -467,8 +450,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C92321823DAC45519791C37 /* Pods_TestProj.framework in Frameworks */,
-				4876B4441C143A8F00B790A7 /* libopencore-amrwb.a in Frameworks */,
-				4876B4431C143A8F00B790A7 /* libopencore-amrnb.a in Frameworks */,
 				4876B36D1C142E2400B790A7 /* libopencore-amrwb.a in Frameworks */,
 				4876B36C1C142E2400B790A7 /* libopencore-amrnb.a in Frameworks */,
 			);
@@ -1141,7 +1122,6 @@
 				4876B41A1C143A8F00B790A7 /* SlimeRefresh */,
 				4876B4221C143A8F00B790A7 /* THProgressView */,
 				4876B4251C143A8F00B790A7 /* TTGlobalUICommon */,
-				4876B4281C143A8F00B790A7 /* VoiceConvert */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -1194,49 +1174,6 @@
 				4876B4271C143A8F00B790A7 /* TTGlobalUICommon.m */,
 			);
 			path = TTGlobalUICommon;
-			sourceTree = "<group>";
-		};
-		4876B4281C143A8F00B790A7 /* VoiceConvert */ = {
-			isa = PBXGroup;
-			children = (
-				4876B4291C143A8F00B790A7 /* amrwapper */,
-				4876B42E1C143A8F00B790A7 /* EMVoiceConverter.h */,
-				4876B42F1C143A8F00B790A7 /* EMVoiceConverter.mm */,
-				4876B4301C143A8F00B790A7 /* opencore-amrnb */,
-				4876B4341C143A8F00B790A7 /* opencore-amrwb */,
-			);
-			path = VoiceConvert;
-			sourceTree = "<group>";
-		};
-		4876B4291C143A8F00B790A7 /* amrwapper */ = {
-			isa = PBXGroup;
-			children = (
-				4876B42A1C143A8F00B790A7 /* amrFileCodec.h */,
-				4876B42B1C143A8F00B790A7 /* amrFileCodec.mm */,
-				4876B42C1C143A8F00B790A7 /* wav.h */,
-				4876B42D1C143A8F00B790A7 /* wav.mm */,
-			);
-			path = amrwapper;
-			sourceTree = "<group>";
-		};
-		4876B4301C143A8F00B790A7 /* opencore-amrnb */ = {
-			isa = PBXGroup;
-			children = (
-				4876B4311C143A8F00B790A7 /* interf_dec.h */,
-				4876B4321C143A8F00B790A7 /* interf_enc.h */,
-				4876B4331C143A8F00B790A7 /* libopencore-amrnb.a */,
-			);
-			path = "opencore-amrnb";
-			sourceTree = "<group>";
-		};
-		4876B4341C143A8F00B790A7 /* opencore-amrwb */ = {
-			isa = PBXGroup;
-			children = (
-				4876B4351C143A8F00B790A7 /* dec_if.h */,
-				4876B4361C143A8F00B790A7 /* if_rom.h */,
-				4876B4371C143A8F00B790A7 /* libopencore-amrwb.a */,
-			);
-			path = "opencore-amrwb";
 			sourceTree = "<group>";
 		};
 		48C8EC061BFC2BD00036CA0F /* Module */ = {
@@ -1532,7 +1469,6 @@
 				4876B43F1C143A8F00B790A7 /* TTGlobalUICommon.m in Sources */,
 				4876B3EC1C14372400B790A7 /* GroupListViewController.m in Sources */,
 				4876B3FD1C14372400B790A7 /* EMTextView.m in Sources */,
-				4876B4411C143A8F00B790A7 /* wav.mm in Sources */,
 				4876B3F11C14372400B790A7 /* ChatroomDetailViewController.m in Sources */,
 				4876B3621C142E2400B790A7 /* EMAudioPlayerUtil.m in Sources */,
 				4876B3221C141D0800B790A7 /* EaseConversationListViewController.m in Sources */,
@@ -1564,7 +1500,6 @@
 				4876B3201C141D0800B790A7 /* EaseEmotionEscape.m in Sources */,
 				4876B3E01C14372400B790A7 /* UIResponder+Router.m in Sources */,
 				4876B3301C141D0800B790A7 /* EaseBubbleView+Video.m in Sources */,
-				4876B4421C143A8F00B790A7 /* EMVoiceConverter.mm in Sources */,
 				4816A7E21C0D7ED00040C4A5 /* MASubViewConstraintsTestViewController.m in Sources */,
 				4876B3EE1C14372400B790A7 /* GroupSubjectChangingViewController.m in Sources */,
 				4876B36B1C142E2400B790A7 /* EMVoiceConverter.mm in Sources */,
@@ -1580,7 +1515,6 @@
 				4876B31C1C141D0800B790A7 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				4876B3F21C14372400B790A7 /* ChatroomListViewController.m in Sources */,
 				4876B3281C141D0800B790A7 /* EaseUserCell.m in Sources */,
-				4876B4401C143A8F00B790A7 /* amrFileCodec.mm in Sources */,
 				4876B3311C141D0800B790A7 /* EaseBubbleView+Voice.m in Sources */,
 				4876B3E31C14372400B790A7 /* ConversationListController.m in Sources */,
 				4876B3E11C14372400B790A7 /* UIViewController+DismissKeyboard.m in Sources */,
