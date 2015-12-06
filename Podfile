@@ -9,5 +9,8 @@ target 'TestProj' do
   pod 'ReactiveCocoa', '2.5'
   pod 'libextobjc', '~> 0.4.1'
   pod 'EaseMobSDKFull', :git => 'https://github.com/easemob/sdk-ios-cocoapods-integration.git'
+  pod 'SDWebImage', '~> 3.7.3'
+  pod 'MJRefresh', '~> 3.0.7'
+  pod 'MWPhotoBrowser', '~> 2.1.1'
 
 end
