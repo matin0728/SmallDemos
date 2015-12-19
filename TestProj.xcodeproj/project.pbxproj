@@ -131,6 +131,9 @@
 		4876B43F1C143A8F00B790A7 /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876B4271C143A8F00B790A7 /* TTGlobalUICommon.m */; };
 		48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */; };
 		48A0D38C1BF31734007A830F /* MAAccessPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */; };
+		48C0D17F1C22A831005C7FF5 /* ZHFeedSwipeAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C0D17E1C22A831005C7FF5 /* ZHFeedSwipeAction.m */; };
+		48C0D1841C22A864005C7FF5 /* ZHSwipeActionRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C0D1831C22A864005C7FF5 /* ZHSwipeActionRenderer.m */; };
+		48C0D1871C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C0D1861C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.m */; };
 		48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */; };
 		48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC0C1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m */; };
 		48C8EC101BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C8EC0F1BFC2C5A0036CA0F /* MAPhotoManagerCollectionViewController.m */; };
@@ -418,6 +421,14 @@
 		48A0D3881BF2BFDE007A830F /* pic_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_placeholder@2x.png"; sourceTree = "<group>"; };
 		48A0D38A1BF31734007A830F /* MAAccessPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAccessPhotosViewController.h; sourceTree = "<group>"; };
 		48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAccessPhotosViewController.m; sourceTree = "<group>"; };
+		48C0D17D1C22A831005C7FF5 /* ZHFeedSwipeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHFeedSwipeAction.h; sourceTree = "<group>"; };
+		48C0D17E1C22A831005C7FF5 /* ZHFeedSwipeAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHFeedSwipeAction.m; sourceTree = "<group>"; };
+		48C0D1801C22A843005C7FF5 /* ZHSwipeAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSwipeAction.h; sourceTree = "<group>"; };
+		48C0D1811C22A856005C7FF5 /* ZHSwipeActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSwipeActionProtocol.h; sourceTree = "<group>"; };
+		48C0D1821C22A864005C7FF5 /* ZHSwipeActionRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSwipeActionRenderer.h; sourceTree = "<group>"; };
+		48C0D1831C22A864005C7FF5 /* ZHSwipeActionRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSwipeActionRenderer.m; sourceTree = "<group>"; };
+		48C0D1851C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSwipeActionTwoStageDeletion.h; sourceTree = "<group>"; };
+		48C0D1861C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSwipeActionTwoStageDeletion.m; sourceTree = "<group>"; };
 		48C8EC081BFC2C0A0036CA0F /* MASpringBoardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASpringBoardLayout.h; sourceTree = "<group>"; };
 		48C8EC091BFC2C0A0036CA0F /* MASpringBoardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASpringBoardLayout.m; sourceTree = "<group>"; };
 		48C8EC0B1BFC2C360036CA0F /* MAPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPhotoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1176,9 +1187,25 @@
 			path = TTGlobalUICommon;
 			sourceTree = "<group>";
 		};
+		48C0D1881C22A87A005C7FF5 /* SwipeAction */ = {
+			isa = PBXGroup;
+			children = (
+				48C0D1851C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.h */,
+				48C0D1861C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.m */,
+				48C0D1821C22A864005C7FF5 /* ZHSwipeActionRenderer.h */,
+				48C0D1831C22A864005C7FF5 /* ZHSwipeActionRenderer.m */,
+				48C0D1811C22A856005C7FF5 /* ZHSwipeActionProtocol.h */,
+				48C0D1801C22A843005C7FF5 /* ZHSwipeAction.h */,
+				48C0D17D1C22A831005C7FF5 /* ZHFeedSwipeAction.h */,
+				48C0D17E1C22A831005C7FF5 /* ZHFeedSwipeAction.m */,
+			);
+			name = SwipeAction;
+			sourceTree = "<group>";
+		};
 		48C8EC061BFC2BD00036CA0F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				48C0D1881C22A87A005C7FF5 /* SwipeAction */,
 				48C8EC071BFC2BDA0036CA0F /* SpringBoard */,
 			);
 			name = Module;
@@ -1414,6 +1441,7 @@
 				4876B3171C141D0800B790A7 /* NSObject+EaseMob.m in Sources */,
 				4876B3631C142E2400B790A7 /* EMAudioRecorderUtil.m in Sources */,
 				4876B3341C141D0800B790A7 /* EaseChatToolbarItem.m in Sources */,
+				48C0D17F1C22A831005C7FF5 /* ZHFeedSwipeAction.m in Sources */,
 				4876B3F71C14372400B790A7 /* AddFriendViewController.m in Sources */,
 				48C8EC1A1BFC581E0036CA0F /* MAPhotoPlusCell.m in Sources */,
 				4876B3261C141D0800B790A7 /* EaseUsersListViewController.m in Sources */,
@@ -1445,6 +1473,7 @@
 				4876B43D1C143A8F00B790A7 /* SRSlimeView.m in Sources */,
 				4876B3661C142E2400B790A7 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				4876B3EA1C14372400B790A7 /* CreateGroupViewController.m in Sources */,
+				48C0D1871C22A872005C7FF5 /* ZHSwipeActionTwoStageDeletion.m in Sources */,
 				4876B3F51C14372400B790A7 /* ContactListViewController.m in Sources */,
 				4876B32F1C141D0800B790A7 /* EaseBubbleView+Text.m in Sources */,
 				4876B4031C14372400B790A7 /* XHMessageTextView.m in Sources */,
@@ -1533,6 +1562,7 @@
 				48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */,
 				4876B3E51C14372400B790A7 /* CustomMessageCell.m in Sources */,
 				4876B3651C142E2400B790A7 /* EMCDDeviceManager+Microphone.m in Sources */,
+				48C0D1841C22A864005C7FF5 /* ZHSwipeActionRenderer.m in Sources */,
 				4876B3671C142E2400B790A7 /* EMCDDeviceManager+Remind.m in Sources */,
 				4876B31F1C141D0800B790A7 /* EaseEmojiEmoticons.m in Sources */,
 			);
