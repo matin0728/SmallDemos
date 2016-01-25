@@ -15,13 +15,14 @@
 #import "MAPhotoManagerCollectionViewController.h"
 #import "MASpringBoardLayout.h"
 #import "MASubViewConstraintsTestViewController.h"
-
+#import "MAHostingViewViewController.h"
 
 static NSString *const kComponentHostingView = @"异步视图的动画支持";
 static NSString *const kAutoLayoutTableViewCell = @"使用自动布局的 TableViewCell";
 static NSString *const kAccessAlbum = @"访问相机和相册";
 static NSString *const kPhotoManager = @"相片管理";
 static NSString *const kSubViewConstraints = @"子视图约束";
+static NSString *const kHostingView = @"ComponentHostingView";
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *table;
@@ -104,7 +105,10 @@ static NSString *const kSubViewConstraints = @"子视图约束";
   } else if ([row isEqualToString:kSubViewConstraints]) {
     controller = [[MASubViewConstraintsTestViewController alloc] init];
 
+  } else if ([row isEqualToString:kHostingView]) {
+    controller = [[MAHostingViewViewController alloc] init];
   }
+
   [self.navigationController pushViewController:controller animated:YES];
   return nil;
 }
@@ -113,7 +117,7 @@ static NSString *const kSubViewConstraints = @"子视图约束";
   static NSArray *model;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum, kPhotoManager, kSubViewConstraints];
+    model = @[kComponentHostingView, kAutoLayoutTableViewCell, kAccessAlbum, kPhotoManager, kSubViewConstraints, kHostingView];
   });
   return model;
 }

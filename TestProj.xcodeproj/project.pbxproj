@@ -28,6 +28,9 @@
 		48DE6FD71BE9E63E0017657F /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FD61BE9E63E0017657F /* UIColor+Addition.m */; };
 		48DE6FDB1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */; };
 		48DE6FE01BE9EF670017657F /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DE6FDF1BE9EF670017657F /* test.png */; };
+		48DE91B71C56042B00504369 /* MAHostingViewViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48DE91B61C56042A00504369 /* MAHostingViewViewController.mm */; };
+		48DE91BA1C5608F700504369 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DE91B91C5608F700504369 /* close.png */; };
+		48DE91BC1C5608FF00504369 /* action_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DE91BB1C5608FF00504369 /* action_avatar.png */; };
 		48FB8FFC1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FB8FFB1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m */; };
 		48FB8FFF1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FB8FFE1BEDE321009D14A7 /* MAAutolayoutTableViewCell.m */; };
 		9C92321823DAC45519791C37 /* Pods_TestProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A1DE6EADB5D4DF08DEF85A /* Pods_TestProj.framework */; };
@@ -85,6 +88,10 @@
 		48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAsyncViewAnimationViewController.h; sourceTree = "<group>"; };
 		48DE6FDA1BE9ED080017657F /* MAAsyncViewAnimationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAAsyncViewAnimationViewController.mm; sourceTree = "<group>"; };
 		48DE6FDF1BE9EF670017657F /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		48DE91B51C56042A00504369 /* MAHostingViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAHostingViewViewController.h; sourceTree = "<group>"; };
+		48DE91B61C56042A00504369 /* MAHostingViewViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAHostingViewViewController.mm; sourceTree = "<group>"; };
+		48DE91B91C5608F700504369 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		48DE91BB1C5608FF00504369 /* action_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action_avatar.png; sourceTree = "<group>"; };
 		48FB8FFA1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAutoLayoutCellTableViewController.h; sourceTree = "<group>"; };
 		48FB8FFB1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAutoLayoutCellTableViewController.m; sourceTree = "<group>"; };
 		48FB8FFD1BEDE321009D14A7 /* MAAutolayoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAutolayoutTableViewCell.h; sourceTree = "<group>"; };
@@ -255,6 +262,7 @@
 		48DE6FD81BE9ECD90017657F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				48DE91B41C5603A900504369 /* HostingViewDemo */,
 				4816A7DD1C0D7E820040C4A5 /* SubViewConstraint */,
 				48C8EC141BFC520F0036CA0F /* PhotoManager */,
 				48DE6FD91BE9ED080017657F /* MAAsyncViewAnimationViewController.h */,
@@ -265,6 +273,25 @@
 				48A0D38B1BF31734007A830F /* MAAccessPhotosViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		48DE91B41C5603A900504369 /* HostingViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48DE91B81C5608E600504369 /* images */,
+				48DE91B51C56042A00504369 /* MAHostingViewViewController.h */,
+				48DE91B61C56042A00504369 /* MAHostingViewViewController.mm */,
+			);
+			name = HostingViewDemo;
+			sourceTree = "<group>";
+		};
+		48DE91B81C5608E600504369 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				48DE91BB1C5608FF00504369 /* action_avatar.png */,
+				48DE91B91C5608F700504369 /* close.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		E1F52CDC00AD8AAD6107A1FC /* Frameworks */ = {
@@ -361,6 +388,8 @@
 			files = (
 				4816A7DF1C0D7E970040C4A5 /* README in Resources */,
 				486D6A421B100B6700F794CC /* LaunchScreen.xib in Resources */,
+				48DE91BC1C5608FF00504369 /* action_avatar.png in Resources */,
+				48DE91BA1C5608F700504369 /* close.png in Resources */,
 				48A0D3891BF2BFDE007A830F /* pic_placeholder@2x.png in Resources */,
 				486D6A3F1B100B6700F794CC /* Images.xcassets in Resources */,
 				48DE6FE01BE9EF670017657F /* test.png in Resources */,
@@ -439,6 +468,7 @@
 				48FB8FFC1BEDE2F2009D14A7 /* MAAutoLayoutCellTableViewController.m in Sources */,
 				48C8EC0A1BFC2C0A0036CA0F /* MASpringBoardLayout.m in Sources */,
 				48C8EC0D1BFC2C360036CA0F /* MAPhotoCollectionViewCell.m in Sources */,
+				48DE91B71C56042B00504369 /* MAHostingViewViewController.mm in Sources */,
 				486D6A371B100B6700F794CC /* AppDelegate.mm in Sources */,
 				486D6A341B100B6700F794CC /* main.m in Sources */,
 				4816A7E51C0D7EE80040C4A5 /* MATestSubView.m in Sources */,
